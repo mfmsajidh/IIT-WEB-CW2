@@ -5,19 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>WEB COURSE WORK</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--ROBOTO FONT-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--External style sheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
-<body>
-    <h1>WEB COURSE WORK</h1>
-    <hr>
-    <h2>Madusha Lakruwan</h2>
-    <h2>Shohan Mark</h2>
-    <h2>Saajid Farook</h2>
-    <h2>Nafeel Cassim</h2>
+<body id = "display-body">
+   
+    <!--ROW-->
+    <div class="display-row">
+        
+        <!--COL 1-->
+        <div class="display-col" id = "img-display">
+            <img src = "Images/witcher.jpg" width = "100%" height = "100%">
+        </div>
+        <!--COL 2-->
+        <div class="display-col" style = "background: white;">
+            <!--Headinig-->
+            <div class = "display-col-header" style = "text-align:center;">
+                <h1>WEB COURSE WORK</h1>
+            </div>
+            <!--Content-->
+            <div class = "names-data">
+                <ul>
+                    <li>Madusha Lakruwan</li>
+                    <li>Shohan Mark</li>
+                    <li>Saajid Farook</li>
+                    <li>Nafeel Cassim</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScripts-->
     <script>
-        var timer = setTimeout(function() {
-            window.location='Home.html'
+       var timer = setTimeout(function() {
+           window.location='Home.html'
         }, 4000);
     </script>
 </body>

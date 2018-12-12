@@ -36,3 +36,39 @@
     top: 0;  
     width: 100;
 }
+/*----------------------------------------Display Page--------------------------------------------*/
+#display-body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/Images/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.display-col {
+    float: left;
+    width: 50%;
+    height: 100%; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .display-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .display-row{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+
+
+
+  
