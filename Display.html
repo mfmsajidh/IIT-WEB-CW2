@@ -55,7 +55,7 @@
       function initialize() {
         startit();
       }
-      function scrollwindow() {
+      function scrollingScreen() {
         if (document.all) temp = document.body.scrollTop;
         else temp = window.pageYOffset;
         if (alt == 0) alt = 1;
@@ -72,7 +72,7 @@
         }
       }
       function startit() {
-        setInterval("scrollwindow()", 10);
+        setInterval("scrollingScreen()", 10);
       }
       window.onload = initialize;
     </script>
