@@ -42,7 +42,7 @@
 
 }
 
-ul {
+.homepage-menu-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,11 +50,11 @@ ul {
     background-color: #333;
   }
   
-  li {
+  .menu-list-item {
     float: left;
   }
   
-  li a {
+  .menu-list-item  a {
     display: block;
     color: white;
     text-align: center;
@@ -62,7 +62,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  .menu-list-item  a:hover:not(.active) {
     background-color: #111;
   }
   
