@@ -1,16 +1,16 @@
-#homepage{
+#homepage {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
-.home-header{
+.home-header {
     width: 100%;
     height: 200px;
-    background-color: blue;
+    background-color: white;
 }
 
-.homepage-content{
+.homepage-content {
     margin: auto;
     width: 100%;
     height: 3600px;
@@ -18,24 +18,58 @@
 
 }
 
-.footer-content{
+.footer-content {
     width: 100%;
     background-color: black;
     height: 400px;
 }
 
-.sticky-navbar{
+.sticky-navbar {
     width: 100%;
-    height: 80px;
+    height: 46px;
     background-color: black;
     overflow: hidden;
 }
 
-.sticky{
+.sticky {
     position: fixed;
-    top: 0;  
+    top: 0;
     width: 100;
 }
+
+#navbartitle {
+    color: #00ff00;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
 /*----------------------------------------Display Page--------------------------------------------*/
 .section {
     position: relative;
@@ -88,3 +122,33 @@
 
 
   
+#display-body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/Images/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.display-col {
+    float: left;
+    width: 50%;
+    height: 100%;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.display-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.display-row {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 10px;
+}
