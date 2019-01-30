@@ -48,27 +48,28 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-  
-  .menu-list-item {
+}
+
+.menu-list-item {
     float: left;
-  }
-  
-  .menu-list-item  a {
+}
+
+.menu-list-item {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  .menu-list-item  a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
+}
+
+.menu-list-item:hover:not(.active) {
+    background-color: rgb(31, 31, 31);
+    color: #00ff00;
+}
+
+.active {
     background-color: #4CAF50;
-  }
+}
 
 /*----------------------------------------Display Page--------------------------------------------*/
 .section {
@@ -77,51 +78,44 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     overflow: hidden;
-  }
-  
-  .section h1 {
+}
+
+.section h1 {
     text-align: center;
     font-size: 6rem;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 20px;
     margin: 15px;
     z-index: 1;
     opacity: 0.7;
-  }
-  
-  .video-container {
+}
+
+.video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-  }
-  
-  .color-overlay {
+}
+
+.color-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     opacity: 0.5;
-  }
+}
 
-  .names-display{
-    margin-top:30px;
-    padding-top:20px;
+.names-display {
+    margin-top: 30px;
+    padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 4rem;
-    
-  }
-  
+}
 
-
-
-
-
-  
 #display-body {
     font-family: 'Roboto', sans-serif;
     background-image: url("/Images/back.jpg");
