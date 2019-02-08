@@ -1,4 +1,4 @@
-# WEB Design & Development Coursework - 19 MARCH
+# WEB Design & Development Coursework
 ## University of Westminster, Department of Computer Science
 ### Assignment Specification (2018/19)
 
