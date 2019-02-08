@@ -8,7 +8,7 @@ var sticky = navbar.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        document.getElementById("navbartitle-li").innerHTML = "<a id=\"navbartitle\" class=\"navbar-item\">Course work</a>";
+        document.getElementById("navbartitle-li").innerHTML = "<a id=\"navbartitle\" class=\"navbar-item\">Coursework</a>";
     } else {
         navbar.classList.remove("sticky");
         document.getElementById("navbartitle").innerHTML = "";
