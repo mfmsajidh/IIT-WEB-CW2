@@ -2,7 +2,7 @@
 ## University of Westminster, Department of Computer Science
 ### Assignment Specification (2018/19)
 
-Official repository for WEB coursework. Deadline 19th of March
+**Deadline: Tuesday, 19 March 2019**
 
 1. (Student 1) A presentation page with title and the name of everyone in the group. After 4 seconds, a second page will be displayed (Main Web page).
 2. (Student 2) Your Main page should be designed so that the user can access several parts of the site. The links on your main page should look like buttons and have a hover effect. This should be created using CSS.
