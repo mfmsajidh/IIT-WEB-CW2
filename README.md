@@ -1,8 +1,6 @@
-## WEB-Coursework - 19 MARCH
-## University of Westminster
-## Department of Computer Science
-## Web Design and Development
-## Assignment Specification (2018/19)
+# WEB Design & Development Coursework - 19 MARCH
+## University of Westminster, Department of Computer Science
+### Assignment Specification (2018/19)
 
 Official repository for WEB coursework. Deadline 19th of March
 
