@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Reviews</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/GameradarTitleIcon.png" />
+  <link rel="stylesheet" type="text/css" href="../Styles/Style.css" />
+</head>
+
+<body>
+  <header>
+      <div class="sticky-navbar" id="navbar">
+          <ul class="homepage-menu-list">
+            <li id="navbartitle-li" class="navbartitle-list-item">
+              <a href="../HomePage/Home.html"><img src="../Assets/Images/Gameradar.png" class="main-logo" /></a>
+            </li>
+            <li>
+              <a class="menu-list-item" href="../HomePage/Home.html">Home</a>
+            </li>
+            <li>
+              <a href="../BuyProducts/BuyProducts.html" class="menu-list-item">Products</a>
+            </li>
+            <li><a href="../Info/Info.html" class="menu-list-item">Info</a></li>
+            <li><a href="../Trending/Trending.html" class="menu-list-item">Trending</a></li>
+            <li><a href="../Reviews/Reviews.html" class="active menu-list-item">Reviews</a></li>
+            <li><a href="../Quiz/QuizUI.html" class="menu-list-item">Quiz</a></li>
+            <li><a href="../About/About.html" class="menu-list-item">About</a></li>
+          </ul>
+        </div>
+  </header>
+  <div class="reviews-container">
+    <div class="reviews-left-container">
+      <div class="comments-form">
+        <div class="comments-form-fields">
+          <form id="reviews-form">
+            <label class="form-label-type1" id="nameLabel">Name</label><br />
+            <input type="text" class="GLOBAL_TEXTFIELD_2" id="nameTextField" />
+            <label class="warning-label" id="name-warning">Please Fill out the Name*</label><br />
+            <label class="form-label-type1" id="emailLabel">Email</label><br />
+            <input type="text" class="GLOBAL_TEXTFIELD_2" id="emailTextField" />
+            <label class="warning-label" id="email-warning">Please Fill out the Email*</label><br />
+            <label class="form-label-type1" id="rateUsLabel">Rate Us</label><br />
+            <select class="select-dropdown" id="rate-site-dropdown" onchange="changeFunc();">
+              <option value="default" id="default">Pick a choice!</option>
+              <option value="Great">Great..Better than Expected</option>
+              <option value="Good">Good..Exactly what I expected</option>
+              <option value="Disappointing">Disappointing</option>
+              <option value="Bad">Bad</option>
+              <option value="Terrible">Terrible</option>
+            </select><br /><br />
+            <label class="form-label-type1" id="comments-label">Comments..</label><br />
+            <textarea class="text-area-type1" id="comment-textArea"></textarea>
+            <button onclick="return validate()" class="submit-button-type1" id="reviews-submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-right-container">
+      <div class="comments-container" id="comments-container">
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="reviews-modal">
+
+    <!-- Modal content -->
+    <div class="reviews-modal-content">
+      <span class="reviews-close">&times;</span>
+      <div class="alert-logo-container">
+        <img class="alert-logo" src="../Assets/Images/GameradarBlack.png" />
+      </div>
+      <div id="comment-content">
+        Dear <b><span id="comment-user-name"></span></b> Thank you very much for your feedback. You have rated our site
+        as <b><span id="comment-rating"></span></b> and your comment was <i><span id="comment-text"></span></i>
+      </div>
+
+
+      <button class="quiz-button" style="width:80px; height:30px; padding:0 ;margin-top:10px" onclick="dismiss()">Okay</button>
+    </div>
+
+  </div>
+  <footer>
+      <div class="footer-content">
+         
+              <div class="footer-inner-content">
+                      <div style="height:250px"></div>
+                      <div class="footer-title-text">Contact us</div>
+                      <div class="footer-title-text">0752003250</div>
+                      <div class="footer-title-text">gameradar@gmail.com</div>
+                      <div class="cv-linl-container"><span class="cv-link-text" >This Page is Created By </span><a class="cv-link" href="../CV/CV - Madusha.html" target="_blank">Madusha Lakruwan</a></div>
+                    </div>
+                    <div class="social-links">
+                      <a href="https://www.facebook.com"><img src="../Assets/Images/instagram.png" alt="" class="social-meida-icon" /></a>
+                      <a href="https://www.facebook.com"><img src="../Assets/Images/facebook.png" alt="" class="social-meida-icon"/></a>
+                      <a href="https://www.facebook.com"><img src="../Assets/Images/twitter.png" alt=""class="social-meida-icon" /></a>
+                      <a href="https://www.facebook.com"><img src="../Assets/Images/google-plus.png" alt="" class="social-meida-icon" /></a>
+                      <a href="https://www.facebook.com"><img src="../Assets/Images/reddit.png" alt="" class="social-meida-icon" /></a>
+                    </div>
+                  
+      </div>
+  </footer>
+  <script src="Reviews.js"></script>
+</body>
+
+</html>

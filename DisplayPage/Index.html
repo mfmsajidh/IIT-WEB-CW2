@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>WEB Coursework - 19 March</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../Styles/Style.css" />
+    <!-- Roboto Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/GameradarTitleIcon.png" />
+
+</head>
+
+<body id="displayPageBody" style="background-color: black;">
+    <div class="ImageContainer1">
+        <img id="logo1" src = "../Assets/Images/Gameradar.png" alt="LOGO"/>
+    </div>
+
+<div id="CARDS"  class="CARDSS">
+        <div id="madushaCard" class="cardLayout">
+                <img src="../Assets/Images/madusha.jpg" alt="Madusha" style="width:100%">
+                <div class="cardData">
+                  <h4><b>Madusha Lakruwan</b></h4> 
+                  <p>Hardcore Gamer</p> 
+                </div>
+        </div>
+        <div id="ShohansCard" class="cardLayout">
+                <img src="../Assets/Images/shohan.jpg" alt="Madusha" style="width:100%">
+                <div class="cardData">
+                  <h4><b>Shohan Mark</b></h4> 
+                  <p>Always at Papre</p> 
+                </div>
+        </div>
+        <div id="SaajidhsCard" class="cardLayout">
+                <img src="../Assets/Images/sajidh.png" alt="Madusha" style="width:100%">
+                <div class="cardData">
+                  <h4><b>Sajidh Farook</b></h4> 
+                  <p>Most Punctual Person LOL</p> 
+                </div>
+        </div>
+        <div id="NafeelsCard" class="cardLayout">
+                <img src="../Assets/Images/nafeel.png" alt="Madusha" style="width:100%">
+                <div class="cardData">
+                  <h4><b>Nafeel Cassim</b></h4> 
+                  <p>Never Answers the phone</p> 
+                </div>
+        </div>
+</div>
+    
+
+    <!-- Javascript -->
+    <script>
+
+        var timer = setTimeout(() => {
+            window.location = "../HomePage/Home.html";
+        }, 15500);
+
+let screenHeight = window.screen.availHeight;
+function pageScroll() {
+    window.scrollBy(0,500);
+    scrolldelay = setTimeout(pageScroll,30);
+}
+ pageScroll();
+
+        document.getElementById("madushaCard").style.display = "none";
+        document.getElementById("ShohansCard").style.display = "none";
+        document.getElementById("SaajidhsCard").style.display = "none";
+        document.getElementById("NafeelsCard").style.display = "none";
+        
+        window.onscroll =  (e) =>  {  
+            console.log(e);
+            if ((window.innerHeight + window.scrollY) > document.body.offsetHeight) {
+                document.getElementById("madushaCard").style.display = "";
+            }
+
+            if((window.innerHeight + window.scrollY) > document.body.offsetHeight + screenHeight){
+                document.getElementById("ShohansCard").style.display = "";
+            }
+
+            if((window.innerHeight + window.scrollY) > document.body.offsetHeight + (screenHeight*1.8)){
+                document.getElementById("SaajidhsCard").style.display = "";
+            }
+
+            if((window.innerHeight + window.scrollY) > document.body.offsetHeight + (screenHeight*2.7)){
+                document.getElementById("NafeelsCard").style.display = "";
+            }
+        }
+    </script>
+</body>
+</html>

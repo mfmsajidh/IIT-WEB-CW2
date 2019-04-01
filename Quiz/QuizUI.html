@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../Styles/Style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/GameradarTitleIcon.png" />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="QuizQuestions.js"></script>
+</head>
+<body>
+    <header>
+            <div class="sticky-navbar" id="navbar">
+                    <ul class="homepage-menu-list">
+                      <li id="navbartitle-li" class="navbartitle-list-item">
+                        <a href="../HomePage/Home.html"><img src="../Assets/Images/Gameradar.png" class="main-logo" /></a>
+                      </li>
+                      <li>
+                        <a class="menu-list-item" href="../HomePage/Home.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="../BuyProducts/BuyProducts.html" class="menu-list-item">Products</a>
+                      </li>
+                      <li><a href="../Info/Info.html" class="menu-list-item">Info</a></li>
+                      <li><a href="../Trending/Trending.html" class="menu-list-item">Trending</a></li>
+                      <li><a href="../Reviews/Reviews.html" class="menu-list-item">Reviews</a></li>
+                      <li><a href="../Quiz/QuizUI.html" class="active menu-list-item">Quiz</a></li>
+                      <li><a href="../About/About.html" class="menu-list-item">About</a></li>
+                    </ul>
+                  </div>
+    </header>
+
+    <div id="quiz-body-instructions">
+        <div class="quiz-body-instructions">
+            <div class="quiz-heading">The Test</div>
+            <div class="quiz-paragraph">This quiz contains 10 questions with a time limit of 10 minutes for the entire quiz</div>
+
+            <div class="quiz-heading">Count Your Score</div>
+            <div class="quiz-paragraph">You will get 2 points for each correct answer, and -1 for each wrong answer. <br/> You can achieve a maximum score of 20 points</div>
+
+            <div class="quiz-heading">Your Performance</div>
+            <div class="quiz-paragraph"> At the end of the quiz, your total score will be displayed along with the summary of your performance <br/> (incorrect answer for which question, and how long it took to complete the quiz)</div>
+
+            <div class="quiz-button-middle">
+                <button id="start" class="quiz-button">Start Quiz ❯❯</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content" style="background-color:grey">
+                <div class="footer-inner-content">
+                    <div style="height:250px"></div>
+                    <div class="footer-title-text">Contact us</div>
+                    <div class="footer-title-text">0752003250</div>
+                    <div class="footer-title-text">gameradar@gmail.com</div>
+                    <div class="cv-linl-container"><span class="cv-link-text" >This Page is Created By </span><a class="cv-link" href="../CV/CV-Sajidh.html" target="_blank">Sajidh Farook</a></div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com"><img src="../Assets/Images/instagram.png" alt="" class="social-meida-icon" /></a>
+                    <a href="https://www.facebook.com"><img src="../Assets/Images/facebook.png" alt="" class="social-meida-icon"/></a>
+                    <a href="https://www.facebook.com"><img src="../Assets/Images/twitter.png" alt=""class="social-meida-icon" /></a>
+                    <a href="https://www.facebook.com"><img src="../Assets/Images/google-plus.png" alt="" class="social-meida-icon" /></a>
+                    <a href="https://www.facebook.com"><img src="../Assets/Images/reddit.png" alt="" class="social-meida-icon" /></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="quiz-body-questions" class="quiz-body-questions">
+        <div class="quiz-container">
+            <div id="quiz"></div>
+        </div>
+
+        <div class="quiz-button-middle">
+            <button id="previous" class="quiz-button">❮ Previous Question</button>
+            <button id="next" class="quiz-button">Next Question ❯</button>
+            <button id="submit" class="quiz-button">Submit Quiz ❯❯</button>
+        </div>
+
+        <div class="quiz-heading">
+            <i class='fas fa-stopwatch' style="color:red"></i> <span id="time"></span> Remaining
+        </div>
+    </div>
+
+    <div id="quiz-body-summary" class="quiz-body-summary">
+
+        <div id="results" class="quiz-heading" style="color: white;"></div>
+        <br/>
+
+        <div class="quiz-heading2" style="color: white;">
+            <i class='fas fa-stopwatch' style="color:white"></i> <span id="timeSummary"></span> Consumed
+        </div>
+
+        <br/>
+        <div class="quiz-heading2" style="color: white;">The answers for the following questions were wrong</div>
+        <div id="wrongAnswer" style="color: white;"></div>
+
+        <div class="quiz-button-middle" style="margin-bottom: 2.5%">
+            <button id="retry" class="quiz-button">Start Again ↺</button>
+        </div>
+    </div>
+
+    <script src="QuizScript.js"></script>
+
+</body>
+</html>

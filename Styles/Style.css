@@ -1,0 +1,1559 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#homepage {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.home-header {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    background-image: url(../Assets/Images/main-header-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.home-header h1 {
+    color: white;
+    padding: 20px;
+}
+
+.homepage-content {
+    margin: auto;
+    width: 100%;
+    background-image: url("../Assets/Images/homeBackground.jpg");
+    display: flex;
+    /* height: 3600px; */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+.sticky-navbar {
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100;
+}
+
+#navbartitle {
+    color: #00ff00;
+
+}
+
+.homepage-menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbartitle-list-item {
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+}
+
+.menu-list-item {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.menu-list-item:hover:not(.active) {
+    background-color: rgb(31, 31, 31);
+    color: #00ff00;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.homepage-left-container {
+    width: 20%;
+    background: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.homepage-main-content {
+    width: 60%;
+    background: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.homepage-right-container {
+    width: 20%;
+    background: rgba(0, 0, 0, 0.6);
+
+
+}
+
+#homepage-main-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+    color: white;
+    -webkit-animation-name: title;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes title {
+    0% {
+        color: #000;
+        font-size: 20px;
+    }
+
+    100% {
+        color: white;
+        font-size: 40px
+    }
+}
+
+#home-image-1 {
+    width: 100%;
+    -webkit-animation-name: image1;
+    -webkit-animation-duration: 2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+
+@-webkit-keyframes image1 {
+    0% {
+        width: 0px;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+#home-image-2 {
+    width: 100%;
+    -webkit-animation-name: image2;
+    -webkit-animation-duration: 3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+
+@-webkit-keyframes image2 {
+    0% {
+        width: 0px;
+    }
+
+    66% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+#home-image-3{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    -webkit-animation-name: image3;
+    -webkit-animation-duration: 4s;
+}
+@-webkit-keyframes image3 {
+    0% {
+        width: 0px;
+    }
+
+    75% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+/*----------------------------------------HomePage Gallery--------------------------------------------*/
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 230px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+}
+
+.desc {
+    display: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px;
+    text-align: center;
+}
+
+a:hover + .desc {
+    display: block;
+}
+
+/*----------------------------------------Display Page--------------------------------------------*/
+#displayPageBody,html{
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+}
+.ImageContainer1{
+    background-image: url("../Assets/Images/homeBackground.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+#logo1 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+    -webkit-animation-name: logoAnimation;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes logoAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.CARDSS{
+    
+    /* display: flex;
+    flex-direction: row;
+    width:100%; */
+    margin-top: 10px;
+    margin-bottom: 50px; 
+}
+
+.cardLayout {
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    color: black
+  }
+  
+  .cardLayout:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .cardData {
+    padding: 2px 16px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+  }
+
+  #madushaCard {
+    -webkit-animation-name: logoAnimation;
+    -webkit-animation-duration: 4s;
+  }
+  #ShohansCard{
+    -webkit-animation-name: logoAnimation;
+    -webkit-animation-duration: 4s;
+  }
+  #SaajidhsCard {
+    -webkit-animation-name: logoAnimation;
+    -webkit-animation-duration: 4s;
+  }
+  #NafeelsCard{
+    -webkit-animation-name: logoAnimation;
+    -webkit-animation-duration: 4s;
+  }
+
+/*----------------------------------------BuyProducts Page--------------------------------------------*/
+#buyProductsBody {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+/* Image Slid SHow */
+.SlideShowContainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slidShowImage {
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.buy-now-button {
+    position: absolute;
+    top: 85%;
+    left:85%;
+    background-color:  #008CBA;  
+    border-radius: 5px;
+    color: white;
+    padding: 1%;
+    width: 8%;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+.buy-now-button:hover {
+  background-color: white;
+  color: #008CBA;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* SLIDE SHOW ------------------------------------------------------------------------------- */
+.buyProducts-gamingType {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2%;
+}
+
+.gaming-images {
+    padding: 1%;
+}
+
+.imageGames:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+    opacity: 0.5;
+}
+
+.selectedImage {
+    border: 1px solid rgba(0, 128, 0);
+    box-shadow: 0 0 4px 3px rgba(0, 128, 0);
+}
+
+.loader {
+    display: none;
+    border: 16px solid #f3f3f3;
+    border-radius: 30%;
+    border-top: 16px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    margin-top: 10px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* platform selection */
+#platform_Selection {
+    list-style-type: none;
+}
+
+#platform_Selection li {
+    display: inline-block;
+    text-align: center;
+}
+
+input[type="checkbox"][id^="gaming"] {
+    display: none;
+}
+
+.gamingLabel:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+    opacity: 0.5;
+}
+
+.gamingLabel {
+    border: 2px solid black;
+    padding: 0;
+    display: block;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+}
+
+.gamingLabel img {
+    transition-duration: 0.2s;
+}
+
+:checked+label {
+    border-color: rgb(6, 0, 128);
+    box-shadow: 0 0 4px 3px rgb(32, 0, 128);
+}
+
+/* choose Game */
+.gameScroller {
+    overflow-x: scroll;
+    box-sizing: content-box;
+    padding-right: 17px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.chooseGamesScroller {
+    background-color: none;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 43%;
+}
+
+#game_Selection {
+    list-style-type: none;
+}
+
+#game_Selection li {
+    display: inline-block;
+    text-align: center;
+}
+
+input[type="checkbox"][id^="game"] {
+    display: none;
+}
+
+/* page styling */
+
+.buyProducts-form-content {
+    border: 1px solid none;
+    margin: 1%;
+}
+
+.button_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col2 {
+    /* width: 100%;
+    height: 100%;
+    background-color: none;
+    padding: 2%;
+    background-color: green */
+    /* background-image: url("../Assets/Images/Witcher.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+/* Buy Products pop up modal */
+.myModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popUpTitle {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.modal-content2 {
+    text-align: center;
+}
+
+/*-----------------------------------------Reviews page--------------------------------------------*/
+.reviews-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.reviews-left-container {
+    width: 50%;
+    background: lightgray;
+
+}
+
+.reviews-right-container {
+    width: 50%;
+    background: lightgray;
+}
+
+.comments-form {
+    background: rgb(88, 88, 88);
+    width: 80%;
+    height: 800px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .13), 1px 2px 2px rgba(0, 0, 0, .1), -1px -2px 2px rgba(0, 0, 0, .05);
+    border-radius: 5px;
+}
+
+.comments-form-fields {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.rate-container {
+    display: block;
+    widows: 100%;
+    height: 50px;
+}
+
+.select-dropdown {
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.warning-label {
+    font-size: 11px;
+    color: #ff6767;
+
+}
+
+/* popup reviews page */
+.reviews-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 300px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.reviews-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+#comment-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The Close Button */
+.reviews-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.reviews-close:hover,
+.reviews-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alert-logo {
+    height: 50px;
+    width: 220px;
+
+}
+
+.alert-logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 50px;
+    width: 220px;
+}
+
+.comments-container {
+    background: rgb(88, 88, 88);
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .13), 1px 2px 2px rgba(0, 0, 0, .1), -1px -2px 2px rgba(0, 0, 0, .05);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.comment-container {
+    width: 80%;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.comment-user-name {
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+}
+
+.comment-email {
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.comment-text-container {
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/*----------------------------------------- GLOBAL STYLES -----------------------------------------*/
+
+/* TextBox */
+.GLOBAL_TEXTFIELD {
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 5px;
+    /* height: 14px; */
+}
+
+.GLOBAL_TEXTFIELD:focus {
+    width: 60%;
+}
+
+.GLOBAL_TEXTFIELD_2 {
+    width: 50%;
+    -webkit-transition: width 0.4s ease-in-out;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 5px;
+    /* display: block; */
+    border: 0;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.GLOBAL_TEXTFIELD_2:focus {
+    width: 100%;
+}
+
+.form-label-type1 {
+    color: white;
+    font-size: 14px;
+}
+
+.text-area-type1 {
+    resize: none;
+    width: 50%;
+    height: 50px;
+    -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.text-area-type1:focus {
+    width: 100%;
+    height: 200px;
+}
+
+.submit-button-type1 {
+    border: 0;
+    color: white;
+    background: #333;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.submit-button-type1:hover {
+    background: rgb(31, 31, 31);
+    color: #00ff00;
+}
+
+.main-logo {
+    width: 222px;
+    height: 50px;
+}
+
+
+/*----------------------------------------- Quiz Page -----------------------------------------*/
+.quiz-body-instructions {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: block;
+}
+
+.quiz-body-questions {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: none;
+}
+
+.quiz-body-summary {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: none;
+}
+
+.quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.quiz-heading {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+.quiz-heading2{
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 0.5%;
+    text-align: center;
+}
+
+.quiz-paragraph {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.quiz-paragraph-answers {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: left;
+    display: inline-block;
+}
+
+.quiz-button {
+    background-color: #008CBA;
+    border: 1px solid #008CBA;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;  /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2.5%;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+.quiz-button-middle {
+    text-align: center;
+}
+
+.quiz-button:hover {
+    color: #008CBA;
+    background-color: white;
+}
+
+.quiz-paragraph-answers label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quiz-slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.quiz-slide-active{
+    opacity: 1;
+    z-index: 2;
+}
+
+.quiz-visibility{
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* UIUIX NAFEEL FIFA 19 */
+.fifa-layout{
+    display: flex;
+    flex-direction: column;
+}
+.fifa-header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    padding:5px;
+}
+.buyhref{
+    color: rgb(17, 112, 236);
+    text-decoration: none
+}
+.buyhref :hover {
+    text-decoration: underline;
+}
+.fifa-image-content{
+    height: 60%;
+    background-color: rgb(250, 250, 250);
+    margin-top: 1%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.fifa-Image-Section1{
+    width: 40%;
+    height: 100%;
+}
+
+.fifa-detail-section1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+.details1{
+    margin-top: 3%;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+.details-contnet {
+    width: 100%;
+    height: 10%;
+}
+.image-with-buy-button{
+    height: 90%; 
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.fifa-part3{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(250, 250, 250);
+    margin-top: 1%;
+    background-image: url("../Assets/Images/marcelo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.image-logo{
+    margin-top: 1%;
+    height: 50%;
+    text-align: center;
+}
+.data-gameplay{
+    height: 49%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.fifa-part4 {
+    margin-top: 1%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+}
+
+.fifa19-row1 {
+    height:40%;
+    display: flex;
+    flex-direction: row;
+}
+.row1-image{
+    width: 50%;
+    background-image: url("../Assets/Images/ronaldo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.row1-details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.row1-details-title {
+    height: 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo-easports{
+    width:30%;
+    background-image: url("../Assets/Images/mainLogoFifa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.data-title{
+    width:70%;
+    background-color: rgb(250, 250, 250);
+    font-size: 30px;
+    text-align: center;
+}
+
+.row1-details-data{
+    height: 70%;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+}
+
+
+.fifa19-row2 {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fifa19-row2-row1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    font-size: 30px;
+}
+.image-col1{
+    width: 25%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:1%;
+}
+.image-col2{
+    width: 25%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:1%;
+}
+.image-col3{
+    width: 25%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:1%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* UIUIX MADUSHA ANTHEM  */
+.anthem-layout{
+    display: flex;
+    flex-direction: column;
+}
+
+.anthem-part1{
+    width: 100%;
+    height: 80%;
+    background-image: url("../Assets/Images/anthem1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.anthem-data1{
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+.anthem-part3{
+    width: 100%;
+    height: 80%;
+    background-image: url("../Assets/Images/robot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row
+}
+.emptydata{
+    width: 50%;
+    height: 100%;
+}
+.details-data{
+    width: 50%;
+    height: 100%;
+    margin-top: 1%;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.anthem-part4{
+    width: 100%;
+    height: 80%;
+    background-image: url("../Assets/Images/anthem1234.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+.data-anthem12{
+    width: 50%;
+    height: 100%;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+.empty-data2{
+    width: 50%;
+    height: 100%;
+
+}
+
+/* footer styles */
+.cv-link{
+    text-decoration: none;
+    color:wheat;
+
+}
+.cv-link:hover{
+    color:greenyellow;
+}
+.cv-link-container{
+    
+}
+.cv-link-text{
+    color:white;
+}
+
+.footer-content {
+    width: 100%;
+    background-color: black;
+    height: 400px;
+}
+
+.footer-title-text{
+    text-align: left;
+    color: white;
+    width: 100%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    background: rgba(255,255, 255, 0.6);
+    width: 100%;
+    
+    
+}
+.social-meida-icon{
+    width:30px;
+    height:30px;
+    padding: 10px;
+}
+.social-meida-icon:hover{
+    padding: 5px;
+    
+}
+.footer-inner-content{
+    height: 350px;
+    width: 100%;
+}
+
+/* about page */
+.footer-about-title{
+    text-align: left;
+    text-decoration: none;
+    padding-top: 40px;
+    padding-left: 10px;
+    font-size: 25px;
+    color:white;
+}
+
+.about-title{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.sitemap-container{
+   height: 800px;
+    width: 100%;
+}
+.scaling-svg{
+    padding-left: 0%;
+    padding-right: 3%;
+    position: relative;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* UIUIX Shohan Creed  */
+.creed-layout{
+    display: flex;
+    flex-direction: column;
+}
+.creed-part1 {
+    width: 100%;
+    height: 80%;
+    margin-top: 1%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+}
+.creed-part1-title{
+    width: 100%;
+    margin-top: 1%;
+    height: 9%;
+    background-color: rgb(250, 250, 250);
+    font-size: 35px;
+    text-align: center;
+}
+.creed-part1-cards{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(250, 250, 250);
+}
+.creed-part1-card1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creed-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    height: 90%;
+}
+.creed-container{
+    padding: 2px 16px;
+}
+.creed-card :hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.creed-part2{
+    height: 60%;
+    width: 100%;
+    margin-top: 1%;
+    background-color: rgb(250, 250, 250);
+    background-image: url("../Assets/Images/creed-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.creed-part2-col1{
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+.creed-part2-col2{
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+.creed-part3{
+    margin-top: 1%;
+    height: 80%;
+    width: 100%;
+    background-image: url("../Assets/Images/creed111.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+.creed-part4{
+    margin-top: 1%;
+    height: 70%;
+    width: 100%;
+    background-image: url("../Assets/Images/creed-logo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+.emptyData-left{
+    width: 33.3%;
+    height: 100%;
+}
+.emptyData-middle{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.emptyData-right{
+    width: 33.3%;
+    height: 100%;
+}
+.emptyData-middle-title{
+    width: 100%;
+    height: 22%;
+    text-align: center;
+}
+.emptyData-middle-list{
+    width: 100%;
+    height: 78%;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* UIUIX Sajidh WatchDogs  */
+
+/* -----------------------Most Trending Page----------------------------------------------------------------------------------------------- */
+.most-Trending{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+}
+.most-Trending-Title{
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.most-Trending-Images{
+    width: 100%;
+    height: 400px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.most-trending1{
+    width: 25%;
+    height:100%;
+}
+.trending-link-style{
+    text-decoration: none;
+    color: black;
+}
+.trending-link-style:hover{
+    color:darkgray;
+
+}
+/* UI-UX SAJIDH WATCHDOGS */
+
+.gameLayout {
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.gameGallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 40%;
+}
+
+.gameGallery:hover {
+    border: 1px solid #777;
+}
+
+.gameGallery img {
+    width: 100%;
+    height: 300px;
+}
+
+.gameDesc {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+}
+
+.quiz-heading1 {
+    font-size: 60px;
+    font-weight: 400;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+.game-heading2 {
+    font-size: 35px;
+    font-weight: 300;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+.gameImageLayout {
+    padding-top: 2.5%;
+    width: 100%;
+    height: 500px;
+}
+
+.gameImage {
+    width: 75%;
+    height: 500px;
+    float: left;
+}
+
+.gameImageText {
+    background-image: url("../Assets/Images/Watch Dogs/WD4.jpg");
+    width: 25%;
+    height: 500px;
+    float: right;
+    text-align: center;
+    color: white;
+}
+
+.gameImageDesc {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+}

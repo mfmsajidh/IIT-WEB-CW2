@@ -1,0 +1,339 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Buy Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Styles/Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/GameradarTitleIcon.png" />
+</head>
+
+<body id="buyProductsBody">
+    <!--Nav Bar-->
+
+    <header>
+            <div class="sticky-navbar" id="navbar">
+                    <ul class="homepage-menu-list">
+                      <li id="navbartitle-li" class="navbartitle-list-item">
+                        <a href="../HomePage/Home.html"><img src="../Assets/Images/Gameradar.png" class="main-logo" /></a>
+                      </li>
+                      <li>
+                        <a class="menu-list-item" href="../HomePage/Home.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="../BuyProducts/BuyProducts.html" class="active menu-list-item">Products</a>
+                      </li>
+                      <li><a href="../Info/Info.html" class="menu-list-item">Info</a></li>
+                      <li><a href="../Trending/Trending.html" class="menu-list-item">Trending</a></li>
+                      <li><a href="../Reviews/Reviews.html" class="menu-list-item">Reviews</a></li>
+                      <li><a href="../Quiz/QuizUI.html" class="menu-list-item">Quiz</a></li>
+                      <li><a href="../About/About.html" class="menu-list-item">About</a></li>
+                    </ul>
+                  </div>
+    </header>
+
+    <div class="SlideShowContainer">
+        <div class="mySlides fade">
+            <img class="slidShowImage" src="../Assets/Images/Buy Cheap.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slidShowImage" src="../Assets/Images/Coming soon.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slidShowImage" src="../Assets/Images/Comingsoon11.jpg">
+        </div>
+        <!--Buy NOw Button-->
+        <a id="linkButton" href="#purchaseTarget" class="buy-now-button">Buy Now</a>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="display: flex; justify-content: center">
+        <img src="../Assets/Images/GameradarBlack.png" width="700" height="200" />
+    </div>
+
+    <div class="buyProducts-form-content" id="purchaseTarget">
+        <div class="col2">
+            <div style="text-align: center; margin-bottom: 10px;font-size: 50px" class="heading">BUY GAMES FROM US</div>
+            <form id="purchaseForm">
+                <!-- Name -->
+                <div id="NameContent" style="text-align: center">
+                    <input type="text" onkeyup="validations('name','Required*','promptName','red','names')" id="name"
+                        class="GLOBAL_TEXTFIELD" placeholder="Name">
+                    <label id="promptName"></label>
+                </div>
+
+                <!-- Email -->
+                <div id="EmailContent" style="text-align: center">
+                    <input type="text" onkeyup="validations('email','Required*','promptemail','red','emails')"
+                        id="email" class="GLOBAL_TEXTFIELD" placeholder="Email">
+                    <label id="promptemail"></label>
+                </div>
+
+                <!--Phone Number-->
+                <div id="PhoneNumberContent" style="text-align: center">
+                    <input type="text" onclick="addInitials('number')"
+                        onkeyup="validations('number','Required*','promptnumber','red','phoneNo')" id="number"
+                        class="GLOBAL_TEXTFIELD" placeholder="Phone Number e.g.+94xxxxxxx">
+                    <label id="promptnumber"></label>
+                </div>
+
+                <!-- Order Type -->
+                <div style="margin: 20px; display:flex; flex-direction: row; justify-content: center">
+                    <input style="display: inline-block;" type="radio" name="orderType" value="Delivery"
+                        onchange="getRadioValue(orderType)"> Delivery<br>
+                    <input style=" display: inline-block;" type="radio" name="orderType" value="Reserve"
+                        onchange="getRadioValue(orderType)"> Reserve and Shop<br>
+                </div>
+
+                <!-- Address -->
+                <div id="AddressContent" style="text-align: center; margin-bottom: 20px;">
+                    <input type="text" onkeyup="validations('address','Required*','promptAddress','red','address')"
+                        id="address" class="GLOBAL_TEXTFIELD" placeholder="Address">
+                    <label id="promptAddress"></label>
+                </div>
+
+                <!--Gaming Platform-->
+                <div style="text-align: center; margin-top: 3%;">
+                    <p style="text-align: center;font-size: 20px;font-weight: bold;">Choose Which Platform Game Do You
+                        Need</p>
+                    <ul id="platform_Selection">
+                        <li>PC<input name="gamingPlatform" type="checkbox" id="gaming1" value="PC" />
+                            <label class="gamingLabel" for="gaming1"><img src="../Assets/Images/pc12.jpg" width="300"
+                                    height="200" /></label>
+                        </li>
+                        <li>PS4<input type="checkbox" name="gamingPlatform" id="gaming2" value="PS" />
+                            <label class="gamingLabel" for="gaming2"><img src="../Assets/Images/ps42.jpeg" width="300"
+                                    height="200" /></label>
+                        </li>
+                        <li>XBOX<input type="checkbox" name="gamingPlatform" id="gaming3" value="XBOX" />
+                            <label class="gamingLabel" for="gaming3"><img src="../Assets/Images/xbox1.jpeg" width="300"
+                                    height="200" /></label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Available Games-->
+                <p style="text-align: center; font-size: 20px;font-weight: bold; margin-top: 3%;">Choose the Games you
+                    want to Purchase(Scroll & Select)</p>
+                <div class="chooseGamesScroller" style="text-align: center">
+                    <ul id="game_Selection">
+                        <li>
+                            God of war
+                            <input type="checkbox" name="chooseGames" id="game1" value="GOD_OF_WAR">
+                            <label class="gamingLabel" for="game1"><img src="../Assets/Images/god_of_war.jpg"
+                                    width="400" height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 8000.00<br>
+                                PS: RS 12000.00<br>
+                                XBOX: RS 13000.00
+                            </label>
+
+                        </li>
+
+                        <li>
+                            Call Of Duty
+                            <input type="checkbox" name="chooseGames" id="game2" value="COD">
+                            <label class="gamingLabel" for="game2"><img src="../Assets/Images/cod.png" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 6300.00<br>
+                                PS: RS 7400.00<br>
+                                XBOX: RS 8333.00
+                            </label>
+                        </li>
+
+                        <li>
+                            FIFA
+                            <input type="checkbox" name="chooseGames" id="game3" value="FIFA">
+                            <label class="gamingLabel" for="game3"><img src="../Assets/Images/fifa.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 9000.00<br>
+                                PS: RS 10000.00<br>
+                                XBOX: RS 10000.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Tomb Rider
+                            <input type="checkbox" name="chooseGames" id="game4" value="TOMB_RIDER">
+                            <label class="gamingLabel" for="game4"><img src="../Assets/Images/tomb.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 8799.00<br>
+                                PS: RS 10000.00<br>
+                                XBOX: RS 8922.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Stick Cricket
+                            <input type="checkbox" name="chooseGames" id="game5" value="CRICKET">
+                            <label class="gamingLabel" for="game5"><img src="../Assets/Images/cricket.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 5600.00<br>
+                                PS: RS 7800.00<br>
+                                XBOX: RS 80000.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Overwatch
+                            <input type="checkbox" name="chooseGames" id="game6" value="OVERWATCH">
+                            <label class="gamingLabel" for="game6"><img src="../Assets/Images/overwatch.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 9000.00<br>
+                                PS: RS 9500.00<br>
+                                XBOX: RS 9800.00
+                            </label>
+                        </li>
+
+                        <li>
+                            GTA V
+                            <input type="checkbox" name="chooseGames" id="game7" value="GTA" />
+                            <label class="gamingLabel" for="game7"><img src="../Assets/Images/gta.jpeg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 5000.00<br>
+                                PS: RS 6700.00<br>
+                                XBOX: RS 7500.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Gears of War
+                            <input type="checkbox" name="chooseGames" id="game8" value="GEAR_OF_WAR" />
+                            <label class="gamingLabel" for="game8"><img src="../Assets/Images/gearofwar.jpeg"
+                                    width="400" height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 7500.00<br>
+                                PS: RS 8000.00<br>
+                                XBOX: RS 12000.00
+                            </label>
+                        </li>
+
+                        <li>
+                            PUBG
+                            <input type="checkbox" name="chooseGames" id="game9" value="PUBG">
+                            <label class="gamingLabel" for="game9"><img src="../Assets/Images/pubg.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 2300.00<br>
+                                PS: RS 4500.00<br>
+                                XBOX: RS 4600.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Fortnite
+                            <input type="checkbox" name="chooseGames" id="game10" value="FORTNITE" />
+                            <label class="gamingLabel" for="game10"><img src="../Assets/Images/fortnite.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 2300.00<br>
+                                PS: RS 5500.00<br>
+                                XBOX: RS 5550.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Assassain's Creed
+                            <input type="checkbox" name="chooseGames" id="game11" value="CREED" />
+                            <label class="gamingLabel" for="game11"><img src="../Assets/Images/creed.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 8700.00<br>
+                                PS: RS 9288.00<br>
+                                XBOX: RS 7500.00
+                            </label>
+                        </li>
+
+                        <li>
+                            Witcher
+                            <input type="checkbox" name="chooseGames" id="game12" value="WITCHER" />
+                            <label class="gamingLabel" for="game12"><img src="../Assets/Images/Witcher.jpg" width="400"
+                                    height="300" /></label>
+                            <label style="color:grey; font-weight: bolder">
+                                PC: Rs 8000.00<br>
+                                PS: RS 12000.00<br>
+                                XBOX: RS 13000.00
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button_content">
+                    <button id="buyNowButton" class="quiz-button" style="width: 200px;" type="button"
+                            onclick="submitClicked(chooseGames,gamingPlatform)">Buy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--THE MODAL-->
+    <div id="buyProductsModal" class="myModal">
+        <!--MODAL CONTENT-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content2">
+                <p class="popUpTitle">Confirm Purchase</p>
+                <img src="../Assets/Images/GameradarBlack.png" width="400" height="100" />
+                <div id="purchasedList">
+                    <p id="TotalPrice"></p>
+                    Dear <span style="font-size: 20px; font-weight: bolder" id="buyProductName"></span> You Currently
+                    Purchased
+                    <br>
+                    <p style="font-weight: bolder" id="SelectedPlatform"></p>
+                    <ul style="font-weight: bolder" id="listItem">
+
+                    </ul>
+                </div>
+                <div style="text-align: center">
+                    <button onclick="dismiss()" class="quiz-button" style="width: 400px;" type="button">Confirm
+                        Purchase</button>
+                    <br>
+                    <div id="loader11" class="loader"></div>
+                    <p id="purchaseStatement"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- the footer -->
+    <footer>
+        <div class="footer-content">
+            <button class="quiz-button" type="button" onclick="increaseFont()">Increase Font Size</button>
+            <button class="quiz-button" type="button" onclick="decreaseFont()">Decrease Font Size</button>
+            <button class="quiz-button" type="button" onclick="resetDefaultFont()">Reset Font Size</button>
+                <div class="footer-inner-content">
+                        <div style="height:150px"></div>
+                        <div class="footer-title-text">Contact us</div>
+                        <div class="footer-title-text">0752003250</div>
+                        <div class="footer-title-text">gameradar@gmail.com</div>
+                        <div class="cv-linl-container"><span class="cv-link-text" >This Page is Created By </span><a class="cv-link" href="../CV/CV-nafeel.html">Nafeel Cassim</a></div>
+                      </div>
+                      <div class="social-links">
+                        <a href="https://www.facebook.com"><img src="../Assets/Images/instagram.png" alt="" class="social-meida-icon" /></a>
+                        <a href="https://www.facebook.com"><img src="../Assets/Images/facebook.png" alt="" class="social-meida-icon"/></a>
+                        <a href="https://www.facebook.com"><img src="../Assets/Images/twitter.png" alt=""class="social-meida-icon" /></a>
+                        <a href="https://www.facebook.com"><img src="../Assets/Images/google-plus.png" alt="" class="social-meida-icon" /></a>
+                        <a href="https://www.facebook.com"><img src="../Assets/Images/reddit.png" alt="" class="social-meida-icon" /></a>
+                      </div>
+                    
+        </div>
+    </footer>
+
+    <script src="BuyProducts.js"></script>
+</body>
+
+</html>

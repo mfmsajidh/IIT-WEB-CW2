@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+}
+
+.cv{
+    width: 595px;
+    margin-top: 0%;
+    margin-left: 30%
+
+}
+
+.cv1{
+    margin-top: -1.5%;
+    width: 595px;
+    height:200px;
+    background-color: rgb(5, 5, 78);
+    position: fixed;
+}
+.empty-space{
+    height: 200px;
+}
+
+.image1{
+    width: 150px;
+    height: 200px;
+}
+
+.name{
+    color: white;
+    font-size: 27px;
+    margin-left: 25px;
+    font-family: "Century", serif;
+}
+
+.u1{
+    color: white;
+    font-family: "Segoe UI Light";
+}
+
+.para1{
+    margin-left: 2%;
+    font-family: "Segoe UI Light";
+    font-weight: 90;
+    color: white;
+}
+
+.paramain{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: "Calibri";
+    font-size: 15px;
+    color: white;
+}
+
+.para2{
+    margin-left: 2%;
+    font-family: "Calibri";
+    font-size: 15px;
+    color: white;
+}
+
+.box{
+    width: 595px;
+    height: 25px;
+    background-color: rgb(121, 125, 126);
+}
+
+.para2{
+    margin-left: 2%;
+    font-family: "Segoe UI Light";
+    font-weight: 90;
+    color: white;
+}
+
+table, th, td {
+    border: 2px solid rgba(1, 204, 255, 0.746);
+    color: white;
+  }
+
+.boxfinal{
+    width: 595px;
+    height: 10px;
+    background-color: lightgray;
+}
+

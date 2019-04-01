@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row > .column {
+    padding: 0 10px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin: auto;
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+  }
+
+  .column :hover {opacity: 0.7;}
+  
+  .column {
+    float: left;
+    width: 20%;
+    padding-bottom: 10%;
+    margin: auto;
+  }
+
+.info-large-image{
+  width: 50%;
+  height: 700px;
+  object-fit: contain;
+}
+.info-large-image-des{
+  float: left;
+  clear: left; 
+  font-size:30px; 
+  padding-left: px; 
+  text-align: left;
+  font-size: 35px;
+  line-height: 30px;
+  font-family: "Times New Roman", Times, Serif;
+}
+.info-large-image-title{
+  float: left; 
+  clear: left; 
+  padding-left: 125px;
+  font-size: 80px; 
+  text-align: left;
+}
+
+.info-large-image-head{
+  text-align: center;
+  padding-left: 10px;
+  font-size: 25px; 
+  line-height: 10px;
+}
+
+.sticky-navbar {
+  width: 100%;
+  height: 46px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100;
+}
+
+#navbartitle {
+  color: #00ff00;
+
+}
+
+.homepage-menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbartitle-list-item {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+}
+
+.menu-list-item {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+.menu-list-item:hover:not(.active) {
+  background-color: rgb(31, 31, 31);
+  color: #00ff00;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.main-logo {
+  width: 222px;
+  height: 50px;
+}
+
+/* footer styles */
+.cv-link{
+  text-decoration: none;
+  color:wheat;
+
+}
+.cv-link:hover{
+  color:greenyellow;
+}
+.cv-link-container{
+  
+}
+.cv-link-text{
+  color:white;
+}
+
+.footer-content {
+  width: 100%;
+  background-color: black;
+  height: 400px;
+}
+
+.footer-title-text{
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+  background: rgba(255,255, 255, 0.6);
+  width: 100%;
+  
+  
+}
+.social-meida-icon{
+  width:30px;
+  height:30px;
+  padding: 10px;
+}
+.social-meida-icon:hover{
+  padding: 5px;
+  
+}
+.footer-inner-content{
+  height: 350px;
+  width: 100%;
+}

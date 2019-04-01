@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Image Gallery </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="student 4.css" />
+
+  <script type="text/javascript">
+    function changecolor(color) {
+      document.getElementsByTagName("Body")[0].style.background = color.value;
+    }
+
+    function updateTextColour(value) {
+      document.body.style.color = '#' + value;
+    }
+
+
+    function mousething(x) {
+      console.log(x.id)
+      if (x.id == "witcher-image") {
+        document.getElementById("full-image-container").innerHTML =
+          "<img src=\"witcher.jpg\" class=\"info-large-image\"/><div class=\"info-large-image-head\"><h1 class=\".info-large-image-title\" > The Witcher 3 : Wild Hunt </h1><p class=\"info-large-image-des\"> <i>The Witcher 3: Wild Hunt is a <br></br> 2015 action role-playing game <br></br> developed and published by <br></br> CD Projekt.<br></br>Based on The Witcher series <br></br> of fantasy novels by Polish author <br></br> Andrzej Sapkowski, <br></br>it is the sequel to the 2011 game <br></br>The Witcher 2: Assassins of Kings.</i></p></div>"
+      } else if (x.id == "assassin-image") {
+        document.getElementById("full-image-container").innerHTML =
+          "<img src=\"assasin.jpg\" class=\"info-large-image\"/><div class=\"info-large-image-head\"><h1 class=\".info-large-image-title\" > Assassin's Creed IV </h1><p class=\"info-large-image-des\"> <i>Assassin's Creed IV: Black Flag <br></br> is an action-adventure video game  <br></br>developed by Ubisoft Montreal and <br></br>published by Ubisoft.<br></br>It is the sixth major installment in the<br></br>Assassin's Creed series. <br></br>Its historical timeframe precedes <br></br>that of Assassin's Creed III, <br></br>though its modern-day sequences  <br></br>succeed III's own.</i></p></div>"
+      } else if (x.id == "fallen-image") {
+        document.getElementById("full-image-container").innerHTML =
+          "<img src=\"fallen.jpg\" class=\"info-large-image\"/><div class=\"info-large-image-head\"><h1 class=\".info-large-image-title\"> Lords of the Fallen </h1><p class=\"info-large-image-des\"> <i>Lords of the Fallen is an <br></br>action role-playing video game <br></br>developed by Deck 13 Interactive<br></br> and CI Games.<br></br>Based on The Witcher series of <br></br> fantasy novels by Polish author <br></br> Andrzej Sapkowski, <br></br>it is the sequel to the 2011 game <br></br>The Witcher 2: Assassins of Kings.</i></p></div>"
+      } else if (x.id == "battle-image") {
+        document.getElementById("full-image-container").innerHTML =
+          "<img src=\"battle.jpg\" class=\"info-large-image\"/><div class=\"info-large-image-head\"><h1 class=\".info-large-image-title\"> Battlefield 4 </h1><p class=\"info-large-image-des\"> <i>Battlefield 4 is a first-person<br></br> shooter video game developed by  <br></br>video game developer EA DICE <br></br>and published by Electronic Arts.<br></br>It is a sequel to 2011's Battlefield 3<br></br>and was released in October 2013<br></br>for Microsoft Windows, <br></br> PlayStation 3, and Xbox 360;<br></br>then later in November for <br></br>PlayStation 4 and Xbox One.</i></p></div>"
+      } else if (x.id == "hitman-image") {
+        document.getElementById("full-image-container").innerHTML =
+          "<img src=\"hitman.jpg\" class=\"info-large-image\"/><div class=\"info-large-image-head\"><h1 class=\".info-large-image-title\"> Hitman: Absolution </h1><p class=\"info-large-image-des\"> <i>Hitman: Absolution is a stealth <br></br>video game developed by <br></br>IO Interactive and published<br></br> by Square Enix.<br></br> It is the fifth installment in the <br></br> Hitman series, <br></br> and runs on IO Interactive's <br></br> proprietary Glacier 2 game engine.</i></p></div>"
+      }
+
+    }
+  </script>
+
+  <style>
+    .black {
+      background-color: black;
+      color: white;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .lightgrey {
+      background-color: lightgrey;
+    }
+  </style>
+
+</head>
+
+<body style="margin:0px; padding: 0px; font-family: 'Roboto', sans-serif;">
+
+    <header>
+        <div class="sticky-navbar" id="navbar">
+          <ul class="homepage-menu-list">
+            <li id="navbartitle-li" class="navbartitle-list-item">
+              <a href="../HomePage/Home.html"><img src="../Assets/Images/Gameradar.png" class="main-logo" /></a>
+            </li>
+            <li>
+              <a class="menu-list-item" href="../HomePage/Home.html">Home</a>
+            </li>
+            <li>
+              <a href="../BuyProducts/BuyProducts.html" class="menu-list-item">Products</a>
+            </li>
+            <li><a href="../Info/Info.html" class="active menu-list-item">Info</a></li>
+            <li><a href="../Trending/Trending.html" class="menu-list-item">Trending</a></li>
+            <li><a href="../Reviews/Reviews.html" class="menu-list-item">Reviews</a></li>
+            <li><a href="../Quiz/QuizUI.html" class="menu-list-item">Quiz</a></li>
+            <li><a href="../About/About.html" class="menu-list-item">About</a></li>
+          </ul>
+        </div>
+      </header>
+
+  <form align="right">
+    <form align="right">
+      <select size="" onchange="changecolor(this);">
+        <option value="select">---- Select Background Theme ----</option>
+        <option Class="black" name="colors"> Black </option>
+        <option Class="white" name="colors"> White </option>
+        <option Class="lightgrey" name="colors"> LightGrey</option>
+      </select>
+
+      <form>
+        <select name="backGround" size="1" onChange="updateTextColour(this.value)">
+          <option value="select">---- Select Font Color ----</option>
+          <option value="000000"> Black </option>
+          <option value="FF0400"> Red </option>
+          <option value="0206FF"> Blue </option>
+          <option value="FFFFFF"> White </option>
+          <option value="00CCFF"> Light Blue</option>
+          <option value="D3D3D3"> Light Grey </option>
+        </select>
+      </form>
+
+      <h1 style="text-align:center" padding-top="5%"> Image Gallery </h1>
+
+      <div class="row">
+        <div class="column">
+          <img src="witcher.jpg" style="width:100%" id="witcher-image" onmouseover="mousething(this)">
+          <h3 align="center">The Witcher 3 : Wild Hunt</h3>
+        </div>
+        <div class="column">
+          <img src="assasin.jpg" style="width:100%" id="assassin-image" onmouseover="mousething(this)">
+          <h3 align="center">Assassin's Creed IV Black Flag</h3>
+        </div>
+        <div class="column">
+          <img src="fallen.jpg" id="fallen-image" style="width:100%" onmouseover="mousething(this)">
+          <h3 align="center">Lords of the Fallen</h3>
+        </div>
+        <div class="column">
+          <img src="battle.jpg" id="battle-image" style="width:100%" onmouseover="mousething(this)">
+          <h3 align="center">Battlefield 4 </h3>
+        </div>
+        <div class="column">
+          <img src="hitman.jpg" style="width:100%" id="hitman-image" onmouseover="mousething(this)">
+          <h3 align="center">Hitman: Absolution</h3>
+        </div>
+      </div>
+      <div id="full-image-container" style="width:100%; display:flex; flex-direction: row; ">
+      </div>
+
+      </div>
+    </form>
+
+    <footer>
+        <div class="footer-content" style="background-color:grey">
+            <div class="footer-inner-content">
+              <div style="height:250px"></div>
+              <div class="footer-title-text">Contact us</div>
+              <div class="footer-title-text">0752003250</div>
+              <div class="footer-title-text">gameradar@gmail.com</div>
+              <div class="cv-linl-container"><span class="cv-link-text" >This Page is Created By </span><a class="cv-link" href="../CV/CV.html" target="_blank">Shohan Mark</a></div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><img src="../Assets/Images/instagram.png" alt="" class="social-meida-icon" /></a>
+              <a href="https://www.facebook.com"><img src="../Assets/Images/facebook.png" alt="" class="social-meida-icon"/></a>
+              <a href="https://www.facebook.com"><img src="../Assets/Images/twitter.png" alt=""class="social-meida-icon" /></a>
+              <a href="https://www.facebook.com"><img src="../Assets/Images/google-plus.png" alt="" class="social-meida-icon" /></a>
+              <a href="https://www.facebook.com"><img src="../Assets/Images/reddit.png" alt="" class="social-meida-icon" /></a>
+            </div>
+          </div>
+  
+      </footer>
+
+</body>
+
+</html>
